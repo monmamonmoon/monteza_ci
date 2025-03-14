@@ -58,6 +58,13 @@
                                 <p>Settings</p>
                             </a>
                         </li>
+                        <!-- Logout Button -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="logoutButton">
+                                <i class="nav-icon fas fa-sign-out-alt"></i>
+                                <p>Logout</p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -73,7 +80,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="https://via.placeholder.com/150" alt="Profile Image" class="profile-image">
+                            <img src="https://pixabay.com/vectors/anonymous-hide-private-hacker-8291223/" alt="Profile Image" class="profile-image">
                             <h4>John Doe</h4>
                             <p>john.doe@example.com</p>
                             <button class="btn btn-primary">Edit Profile</button>
@@ -114,6 +121,22 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- Example Input Field -->
+                            <div class="card mt-3">
+                                <div class="card-header">
+                                    <h5>Example Input Field</h5>
+                                </div>
+                                <div class="card-body">
+                                    <form action="#" method="post">
+                                        <div class="form-group">
+                                            <label for="exampleInput">Enter Text:</label>
+                                            <input type="text" class="form-control" id="exampleInput" placeholder="Type something...">
+                                        </div>
+                                        <button type="submit" class="btn btn-success">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+
                             <!-- Activity Feed -->
                             <div class="card mt-3">
                                 <div class="card-header">
@@ -137,5 +160,14 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js"></script>
+
+    <script>
+        // Logout button functionality (for demo purposes)
+        document.getElementById("logoutButton").addEventListener("click", function() {
+            alert("You have been logged out.");
+            // Redirect to the login page (adjust URL as necessary)
+            window.location.href = "login.html";
+        });
+    </script>
 </body>
 </html>
